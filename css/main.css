@@ -64,6 +64,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 
 .button__item {
@@ -137,7 +138,7 @@ body {
 }
 
 .description {
-    font-family: 'Open Sans'. sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #FAF9F9;
