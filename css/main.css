@@ -222,38 +222,4 @@ body {
     padding: 10px 30px;
 }
 
-.main__menu {
-    border: 1px solid red;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: auto auto auto;
-    /* gap: 20px; */
-}
 
-.burger__name {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    color: #1B2A49;
-}
-
-.price {
-    /* font-family: 'Nunito Sans'; */
-    font-weight: 700;
-    font-size: 20px;    
-    text-align: center;
-    color: #979797;
-}
-
-.cart__buy {
-    /* font-family: 'Nunito Sans'; */
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E2F40;
-    background: #FBB731;
-    border-radius: 5px;
-}
