@@ -102,6 +102,7 @@ body {
     padding: 142px 0;
     text-align: center;
     color: #fff;
+    margin-bottom: 140px;
 }
 
 .breadcrumbs {
@@ -144,4 +145,115 @@ body {
     color: #FAF9F9;
     max-width: 319px;
     margin: 0 auto;
+}
+
+/* ==========main========== */
+
+.burger__box {
+    background-image: url('/img/main/burger__box__bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 100px;
+    margin-bottom: 100px;
+}
+
+.burger__box__title {
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;    
+}
+
+.burger__box__title span {
+    display: block;
+    width: 95px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    background: #F37335;
+    border-radius: 14px;
+    padding: 5px 15px;
+}
+
+.burger__box p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FAF9F9;
+    width: 353px;
+}
+
+.burger__box a {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E2F40;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: block;
+    width: 170px;    
+}
+
+.main__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__header_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #1B2A49;
+}
+
+.main__header__select {
+    font-family: 'Open Sans';    
+    font-weight: 400;
+    font-size: 15px;    
+    color: #443737;    
+    border-radius: 22px;
+    padding: 10px 30px;
+}
+
+.main__menu {
+    border: 1px solid red;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    /* gap: 20px; */
+}
+
+.burger__name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    color: #1B2A49;
+}
+
+.price {
+    /* font-family: 'Nunito Sans'; */
+    font-weight: 700;
+    font-size: 20px;    
+    text-align: center;
+    color: #979797;
+}
+
+.cart__buy {
+    /* font-family: 'Nunito Sans'; */
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E2F40;
+    background: #FBB731;
+    border-radius: 5px;
 }
