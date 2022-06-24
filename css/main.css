@@ -251,3 +251,106 @@ body {
     width: 100%;
     height: 430px;
 }
+
+.menu__grid__title {
+    color: #1B2A49;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu__grid__price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    text-align: center;
+}
+
+.menu__grid__btn {
+    background: #FBB731;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 0 auto;
+    gap: 5px;
+    align-items: center;
+}
+
+.menu__grid__icon {
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/main/menu/price__cart.png');
+}
+
+.menu__grid__text {    
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E2F40;
+}
+
+/* =========footer========== */
+
+footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;    
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 63px;
+    height: 56px;
+    padding-top: 16px;
+}
+.item {
+    flex: 0 0 auto;
+}
+.item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.item ul,
+.tel ul {
+    list-style-type: none;
+}
+
+.tel ul {
+    margin: 10px 0;
+}
+.item li {
+    margin-bottom: 9px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.tel ul {
+    font-size: 20px;
+    color: #FBB731;
+}
+.tel li {
+    margin-bottom: 12px;
+}
+
