@@ -17,6 +17,13 @@ header {
     padding: 26px 0;
 }
 
+.header__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
+
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -218,9 +225,16 @@ header {
     color: #1E2F40;
     background: #FBB731;
     border-radius: 5px;
-    padding: 20px 10px;
+    padding: 18px 8px;
     display: block;
-    width: 170px;    
+    width: 170px;
+    border: 1px solid #FBB731;    
+}
+
+.burger__box a:hover {
+    background-color: transparent;
+    color: #FBB731;
+    transition: .4s;
 }
 
 .menu__header {
@@ -388,9 +402,10 @@ footer {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.tel ul {
+.footer__list__tel a {
     font-size: 20px;
     color: #FBB731;
+    text-decoration: none;
 }
 .tel li {
     margin-bottom: 12px;
