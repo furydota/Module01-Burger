@@ -12,7 +12,7 @@
     <title>Burger</title>
 </head>
 <body>
-    <header>
+    <header id="headerTop">
         <div class="container">
             <div class="header">
                 <div class="header__item">
@@ -48,8 +48,8 @@
     </div>
     <main>
         <div class="container">
-            <div class="burger__box">
-                <h2 class="burger__box__title">
+            <div class="banner__box">
+                <h2 class="banner__box__title">
                     <span>скидка</span>-30%
                 </h2>
                 <p>Только при покупке 3-х и более позиций,<br>мы дарим скидку. Акции не суммируются.</p>
@@ -216,6 +216,40 @@
                 </ul>
             </div>       
         </div>
-    </footer>    
+    </footer>
+        <a href="#headerTop" class="button__up hidden" id="btnUp">Наверх</a>
+    <script>
+        // Smooth Scroll
+        const links = document.querySelectorAll(".banner__link");
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({behavior: "smooth"});
+        }
+
+        // Button Up
+        window.onscroll = function(){scrollFunction()};
+        const upbuttons = document.querySelectorAll(".button__up");
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button__up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button__up hidden';
+            }
+        }
+    </script>    
 </body>
 </html>
