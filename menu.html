@@ -15,6 +15,9 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()" ></button>                
+                </div>
                 <div class="header__item">
                     <a href="index.html" class="header__logo"></a>
                     <nav>
@@ -135,7 +138,7 @@
                     </div>
                 </div>
             </section>
-            <section class="additionally">
+            <section class="additionally menu__other">
                 <div class="container">
                     <div class="menu__header">
                         <h2 class="menu__title">Дополнительно</h2>                        
@@ -228,6 +231,16 @@
         </div>
     </footer>
         <a href="#headerTop" class="button__up hidden" id="btnUp">Наверх</a>
+    <div class="modal" id="modal">
+        <ul class="header__nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#" class="active">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>  
+    </div>
+    
     <script>
         // Smooth Scroll
         const links = document.querySelectorAll(".banner__link");
@@ -260,6 +273,17 @@
                 document.getElementById('btnUp').className = 'button__up hidden';
             }
         }
+
+         // Menu
+
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        }
+
     </script>    
 </body>
 </html>
