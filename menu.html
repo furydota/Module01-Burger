@@ -71,7 +71,7 @@
                     <div class="menu__grid">
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/hot__burger.svg" alt="Острый бургер">
+                                <img src="img/main/menu/hot__burger.png" alt="Острый бургер">
                             </div>
                             <h3 class="menu__grid__title">Острый бургер</h3>
                             <p class="menu__grid__price">$26</p>
@@ -82,7 +82,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/gril__burger.svg" alt="Гриль Бургер">
+                                <img src="img/main/menu/gril__burger.png" alt="Гриль Бургер">
                             </div>
                             <h3 class="menu__grid__title">Гриль Бургер</h3>
                             <p class="menu__grid__price">$16</p>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/gigant__burger.svg" alt="Бурег Гигант">
+                                <img src="img/main/menu/gigant__burger.png" alt="Бурег Гигант">
                             </div>
                             <h3 class="menu__grid__title">Бурег Гигант</h3>
                             <p class="menu__grid__price">$37</p>
@@ -104,7 +104,7 @@
                         </div>                    
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/chicken__burger.svg" alt="Бургер с курицей">
+                                <img src="img/main/menu/chicken__burger.png" alt="Бургер с курицей">
                             </div>
                             <h3 class="menu__grid__title">Бургер с курицей</h3>
                             <p class="menu__grid__price">$18</p>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/chicken__burger__01.svg" alt="Бургер с курицей">
+                                <img src="img/main/menu/chicken__burger__01.png" alt="Бургер с курицей">
                             </div>
                             <h3 class="menu__grid__title">Бургер с курицей</h3>
                             <p class="menu__grid__price">$9</p>
@@ -126,7 +126,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/triple__burger.svg" alt="Тройной бурегр">
+                                <img src="img/main/menu/triple__burger.png" alt="Тройной бурегр">
                             </div>
                             <h3 class="menu__grid__title">Тройной бурегр</h3>
                             <p class="menu__grid__price">$7</p>
@@ -146,7 +146,7 @@
                     <div class="menu__grid">
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/sendvich.svg" alt="Сэндвич">
+                                <img src="img/main/menu/sendvich.png" alt="Сэндвич">
                             </div>
                             <h3 class="menu__grid__title">Сэндвич</h3>
                             <p class="menu__grid__price">$3</p>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/free.svg" alt="Картошка Фри">
+                                <img src="img/main/menu/free.png" alt="Картошка Фри">
                             </div>
                             <h3 class="menu__grid__title">Картошка Фри</h3>
                             <p class="menu__grid__price">$5</p>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
-                                <img src="img/main/menu/hot-dog.svg" alt="Бургер Гигант">
+                                <img src="img/main/menu/hot__dog.png" alt="Хот-Дог">
                             </div>
                             <h3 class="menu__grid__title">Хот-Дог</h3>
                             <p class="menu__grid__price">$7</p>
@@ -230,7 +230,7 @@
             </div>       
         </div>
     </footer>
-        <a href="#headerTop" class="button__up hidden" id="btnUp">Наверх</a>
+    <a href="#headerTop" class="button__up hidden" id="btnUp">Наверх</a>
     <div class="modal" id="modal">
         <ul class="header__nav">
             <li><a href="index.html">Главная</a></li>
@@ -240,50 +240,6 @@
         </ul>
         <button class="burger-close" onclick="closeModal()"></button>  
     </div>
-    
-    <script>
-        // Smooth Scroll
-        const links = document.querySelectorAll(".banner__link");
-        for (const link of links) {
-            link.addEventListener("click", clickHandler);
-        }
-        function clickHandler(e) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        document.querySelector(href).scrollIntoView({behavior: "smooth"});
-        }
-
-        // Button Up
-        window.onscroll = function(){scrollFunction()};
-        const upbuttons = document.querySelectorAll(".button__up");
-        for (const upbutton of upbuttons) {
-            upbutton.addEventListener("click", clickHandler);
-        }
-        function clickHandler(e) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        document.querySelector(href).scrollIntoView({
-            behavior: "smooth"
-        });
-        }
-        function scrollFunction(){
-            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-                document.getElementById('btnUp').className = 'button__up visible';
-            } else {
-                document.getElementById('btnUp').className = 'button__up hidden';
-            }
-        }
-
-         // Menu
-
-        function openModal() {
-            document.getElementById("modal").style.top = "0px";
-        }
-
-        function closeModal() {
-            document.getElementById("modal").style.top = "-400px";
-        }
-
-    </script>    
+    <script src="script.js"></script>
 </body>
 </html>
