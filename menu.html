@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Burger</title>
 </head>
 <body>
@@ -55,7 +56,8 @@
                 <h2 class="banner__box__title">
                     <span>скидка</span>-30%
                 </h2>
-                <p>Только при покупке 3-х и более позиций,<br>мы дарим скидку. Акции не суммируются.</p>
+                <p class="banner__box__p__m">Только при покупке 3-х и более <br> позиций,мы дарим скидку. <br>Акции не суммируются.</p>                
+                <p class="banner__box__p" >Только при покупке 3-х и более позиций,<br>мы дарим скидку. Акции не суммируются.</p>
                 <a class="banner__link" href="#menuBurger">купить сейчас</a>
             </div>
             <section class="menu" id="menuBurger" >
@@ -141,14 +143,14 @@
             <section class="additionally menu__other">
                 <div class="container">
                     <div class="menu__header">
-                        <h2 class="menu__title">Дополнительно</h2>                        
+                        <h2 class="menu__title menu__title__add">Дополнительно</h2>                        
                     </div>
                     <div class="menu__grid">
                         <div class="menu__grid__item">
                             <div class="menu__grid__cover">
                                 <img src="img/main/menu/sendvich.png" alt="Сэндвич">
                             </div>
-                            <h3 class="menu__grid__title">Сэндвич</h3>
+                            <h3 class="menu__grid__title mgt__add">Сэндвич</h3>
                             <p class="menu__grid__price">$3</p>
                             <button type="button" class="menu__grid__btn">
                                 <span class="menu__grid__icon"></span>
@@ -159,7 +161,7 @@
                             <div class="menu__grid__cover">
                                 <img src="img/main/menu/free.png" alt="Картошка Фри">
                             </div>
-                            <h3 class="menu__grid__title">Картошка Фри</h3>
+                            <h3 class="menu__grid__title mgt__add">Картошка Фри</h3>
                             <p class="menu__grid__price">$5</p>
                             <button type="button" class="menu__grid__btn">
                                 <span class="menu__grid__icon"></span>
@@ -170,7 +172,7 @@
                             <div class="menu__grid__cover">
                                 <img src="img/main/menu/hot__dog.png" alt="Хот-Дог">
                             </div>
-                            <h3 class="menu__grid__title">Хот-Дог</h3>
+                            <h3 class="menu__grid__title mgt__add">Хот-Дог</h3>
                             <p class="menu__grid__price">$7</p>
                             <button type="button" class="menu__grid__btn">
                                 <span class="menu__grid__icon"></span>
@@ -231,6 +233,9 @@
         </div>
     </footer>
     <a href="#headerTop" class="button__up hidden" id="btnUp">Наверх</a>
+    
+    <!-- ==========Modal========== -->
+    
     <div class="modal" id="modal">
         <ul class="header__nav">
             <li><a href="index.html">Главная</a></li>

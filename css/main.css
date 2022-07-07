@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 74%;
+    flex-basis: 77%;
 }
 
 .container {
@@ -127,7 +127,7 @@ header {
 
 .breadcrumbs {
     padding-left: 0;
-    margin-top: 0;
+    margin-top: 3px;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -213,7 +213,11 @@ header {
     line-height: 24px;
     color: #FAF9F9;
     width: 353px;
-    margin-top: 0;
+    margin-top: -37px;
+}
+
+.banner__box__p__m {
+    display: none;
 }
 
 .banner__link {
@@ -245,6 +249,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -29px;
 }
 
 .menu__title {
@@ -602,7 +607,7 @@ footer {
     max-width: 500px;
     text-align: center;
     position: absolute;
-    top: 0;
+    top: -400px;
     left: 0;
     right: 0;
     margin: 20px auto 0; 
@@ -632,111 +637,3 @@ footer {
     top: 20px;
     cursor: pointer;
 }
-
-/* RESPONSIVE */
-
-@media (min-width: 1001px) {
-    .footer__list + .footer__list__tel {
-        display: none;
-    }
-}
-
-@media (min-width:766px) {
-    .header-burger {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        width: 738px;              
-    }
-
-    .header__logo {
-        width: 150px;
-        height: 48px;
-        background-size: contain;
-    }
-
-    .header__item {
-        flex-basis: 88%;
-    }
-
-    .header__nav {
-        gap: 22px;
-    }
-
-    .hero {
-        margin-bottom: 72px;        
-    }
-
-    .banner__box {
-        background-position: -75px center;
-        padding: 50px 40px;
-        margin-bottom: 80px;
-    }
-    .menu__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px 15px;            
-    }
-
-    .menu__other {
-        overflow: hidden;
-        height: 785px;    
-    }
-    
-    .menu__other .menu__grid {
-        display: flex;
-        width: auto;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding-bottom: 50px;
-    }
-
-    .menu__other .menu__grid__item {
-        flex: 0 0 281px;
-    }
-        
-    .menu__other .menu__grid__cover img {
-        height: 320px;        
-    }
-
-    .menu__grid__cover {
-        height: 320px;
-    }
-    
-    .tel {
-        display: none;
-    }
-
-    .footer__list + .footer__list__tel {
-        display: block;
-    }
-
-}
-
-@media (max-width:765px) {
-    nav {
-        display: none;
-    }
-
-    .header {
-        gap: 21px;
-    }
-}
-
-/* @media (max-width:567px) {
-    .title {
-        
-    }
-
-} */
-
-@media (max-width:360px) {
-    .header__logo {
-        width: 116px;
-        height: 37px;
-        background-size: contain;
-
-    }
-} 
