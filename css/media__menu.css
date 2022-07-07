@@ -205,8 +205,110 @@
 
     .menu__select {
         font-size: 12px;
-        padding: 10px 30px;
-        flex-basis: 1px;       
+        padding: 11px 19px;
+        flex-basis: 1px;
+        margin-bottom: 13px;        
+    }     
+
+    .banner__box__p__m {
+        line-height: 25px;
     }
+
+    .menu__header h2 {
+        margin-bottom: 34px;
+    }
+
+    .menu__grid {
+        gap: 9px;
+    }
+
+    .menu__grid__title {
+        font-size: 13px;
+        margin-top: 11px;
+    }
+
+    .menu__grid__cover {
+        height: 180px;
+    }
+
+    .menu__grid__cover img {
+        height: 180px;
+    } 
+
+    .menu__grid__price {
+        margin-top: -7px;
+        margin-bottom: 14px;
+        font-size: 16px;
+    }
+
+    .menu__grid__btn {
+        margin-bottom: 10px;       
+    }
+    
+    .menu__title__add {
+        margin-top: -4px;
+    }
+
+    .additionally img {
+        width: 140px;
+        height: 201px;
+    }
+
+    .menu__other .menu__grid__item {
+        flex: 0 0 0;
+    }
+
+    .menu__other {
+        height: 455px;
+    }
+    
+    .footer {
+        position: relative;
+        height: 661px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .tel {
+        position: absolute;
+        right: 15px;
+        top: 53px;
+        display: block;
+    }
+
+    .pos1 {
+        position: absolute;
+        top: -113px;
+        right: -76px
+    }
+
+    .pos2 {
+        position: absolute;
+        left: -34px;
+        top: 99px;
+    }
+
+    .pos3 {
+        position: absolute;
+        left: -37px;
+        top: 303px
+    }
+   
+    .pos4 {
+        display: none;
+    }
+
+    .item li {
+        line-height: 38px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+
+    .item h2 {
+        margin-bottom: 0;
+    }
+
 
 }

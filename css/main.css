@@ -424,6 +424,14 @@ footer {
     transition: 0.4s;
 }
 
+.footer__list__tel__mobile {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
 .menu__grid__text {
     color: #1E2F40;
     font-weight: 700;
