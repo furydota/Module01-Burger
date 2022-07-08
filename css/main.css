@@ -116,7 +116,7 @@ header {
 /* ==========hero========== */
 .hero {
     text-align: center;
-    background-image: url('../img/hero/bg.jpg');
+    background-image: url('../img/hero/bg.png');
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
