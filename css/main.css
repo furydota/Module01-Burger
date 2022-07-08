@@ -267,7 +267,9 @@ header {
     border-radius: 22px;
     padding: 10px 30px;
     border: 1px solid #DEDEDE;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../img/main/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -295,7 +297,8 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
