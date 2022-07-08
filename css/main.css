@@ -597,6 +597,10 @@ footer {
     margin-top: 0;
 }
 
+.pos1 {
+    display: none;
+}
+
 /* Modal */
 /* КНОПКА БУРГЕР */
 .burger {

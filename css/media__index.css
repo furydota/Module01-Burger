@@ -12,8 +12,7 @@
 
 @media (max-width:768px) {
     .wrap {
-        max-width: 738px;
-        
+        max-width: 738px;        
     }
 
     .content {
@@ -146,7 +145,7 @@
     }
 
     .content {
-        padding-top: 5px;
+        padding-top: 40px;
         padding-bottom: 166px;
         padding-left: 15px;
     }
@@ -164,21 +163,22 @@
     }
 
     .content__text {
-        max-width: 277px;
-        font-size: 13px;
-        margin-top: 24px
+        max-width: 274px;
+        font-size: 12px;
+        margin-top: 24px;
+        line-height: 18px;
     }
     
     .content__link, .promo a {
         padding: 18px 40px;
         font-size: 13px;
-        margin-top: -8px        
+        margin-top: 2px       
     }
 
     .main img {
         max-width: 298px;
         max-height: 298px;
-        right: 190px;
+        right: -11px;
         bottom: -80px
     }
 
@@ -193,7 +193,8 @@
 
     .promo {
         padding-top: 96px;
-        padding-bottom: 63px;        
+        padding-bottom: 63px;
+        margin-bottom: 260px;        
     }
 
     .promo-left {
@@ -224,6 +225,7 @@
 
     .free {
         font-size: 39px;
+        margin-top: 0px;
     }
 
     .promo__dr {
@@ -232,12 +234,13 @@
         margin-left: 3px;
         width: 261px;
         letter-spacing: .2px;
+        margin-bottom: 23px;
     }
 
     .promo-right a{
         margin-top: 5px;
         margin-left: 3px;
-        padding: 20px 32px       
+        padding: 19px 32px       
     }
 
     footer {
