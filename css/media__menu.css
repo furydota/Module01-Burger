@@ -4,16 +4,9 @@
     }
 }
 
-@media (min-width:766px) {
-    .header-burger {
-        display: none;
-    }
-}
-
 @media (max-width: 1000px) {
     .container {
-        width: 738px;
-        padding: 0;              
+        max-width: 738px;                      
     }
 
     .header__logo {
@@ -31,7 +24,8 @@
     }
 
     .hero {
-        margin-bottom: 69px;        
+        margin-bottom: 69px;
+        background-size: auto auto;        
     }
 
     .banner__box {
@@ -52,6 +46,10 @@
     .menu__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 21px;            
+    }
+
+    .menu__grid__cover {
+        height: 430vw;
     }
 
     .menu__other {
@@ -110,7 +108,17 @@
 
 }
 
+@media (min-width:766px) {
+    .header-burger {
+        display: none;
+    }
+}
+
 @media (max-width:765px) {
+    
+    .container {
+        max-width: 740px;
+    }
     nav {
         display: none;
     }
@@ -118,7 +126,37 @@
     .header {
         gap: 21px;
     }
+
+    .hero {
+        background-size: auto auto;
+        margin-right: 0;        
+    }
+    .header-burger {
+        display: block;
+    }
 }
+
+@media (max-width:669px) {
+    .container {
+        max-width: 650px;
+    }
+}
+
+@media (max-width:649px) {
+    .container {
+        max-width: 629px;        
+    }
+}
+
+@media (max-width:655px) {
+    .container {
+        max-width: 625px;
+    }
+    
+    .hero {
+        background-size: auto auto;
+    }
+} 
 
 @media (max-width:567px) {
     .title {
@@ -136,6 +174,10 @@
 }
 
 @media (max-width:360px) {
+    .container {
+        max-width: 330px;
+    }
+    
     .header__logo {
         width: 116px;
         height: 37px;
@@ -145,7 +187,7 @@
 
 @media (max-width:320px) {
     .container {
-        width: 290px;
+        max-width: 290px;
     }
     .hero {
         padding: 55px 0;
