@@ -179,7 +179,7 @@ header {
 /* ==========main========== */
 
 .banner__box {
-    background-image: url(/img/main/burger__box__bg.png);
+    background-image: url('../img/main/burger__box__bg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
